@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hati_Logo_0: 5088494139463196557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
