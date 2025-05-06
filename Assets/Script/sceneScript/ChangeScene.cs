@@ -1,27 +1,23 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.SceneManagement; // Import SceneManager untuk mengelola scene
+using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    void Start()
-    {
-
-    }
-    void Update()
-    {
-
-    }
+    [Header("Nama scene tujuan")]
+    public string sceneName; // Bisa diisi lewat Inspector Unity
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            // Ganti scene ke scene yang diinginkan
-            SceneManager.LoadScene("Scene3"); // Ganti "SceneName" dengan nama scene yang ingin dimuat
+            if (!string.IsNullOrEmpty(sceneName))
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+            else
+            {
+                Debug.LogWarning("Scene name belum diisi di Inspector, Onii-chan~!");
+            }
         }
     }
 }
-
-
