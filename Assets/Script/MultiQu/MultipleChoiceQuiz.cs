@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class MultipleChoiceQuiz : MonoBehaviour {
-    [TextArea]
+    /*[TextArea]
     public string questionText;
     public string[] choices;
     public int correctAnswerIndex;
@@ -40,5 +40,5 @@ public class MultipleChoiceQuiz : MonoBehaviour {
         } else {
             resultText.text = "Salah... Coba lagi nanti.";
         }
-    }
+    }*/
 }
