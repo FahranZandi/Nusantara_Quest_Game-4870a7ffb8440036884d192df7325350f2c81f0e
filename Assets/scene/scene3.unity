@@ -730,8 +730,10 @@ GameObject:
   - component: {fileID: 305190237}
   - component: {fileID: 305190236}
   - component: {fileID: 305190235}
+  - component: {fileID: 305190238}
+  - component: {fileID: 305190239}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: Button (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -800,7 +802,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 305190236}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 305190239}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &305190236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,6 +853,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305190233}
   m_CullTransparentMesh: 1
+--- !u!114 &305190238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305190233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.25490198}
+  m_EffectDistance: {x: 12, y: -10}
+  m_UseGraphicAlpha: 1
+--- !u!114 &305190239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305190233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98461b37878395c44abfa8b8b49af847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 2077078550}
 --- !u!1 &345111917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,8 +1629,10 @@ GameObject:
   - component: {fileID: 807951602}
   - component: {fileID: 807951601}
   - component: {fileID: 807951600}
+  - component: {fileID: 807951603}
+  - component: {fileID: 807951604}
   m_Layer: 5
-  m_Name: Button (Legacy) (3)
+  m_Name: Button (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1656,7 +1701,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 807951601}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 807951604}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &807951601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1695,6 +1752,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807951598}
   m_CullTransparentMesh: 1
+--- !u!114 &807951603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807951598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.25490198}
+  m_EffectDistance: {x: 12, y: -10}
+  m_UseGraphicAlpha: 1
+--- !u!114 &807951604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807951598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98461b37878395c44abfa8b8b49af847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 2077078550}
 --- !u!4 &961666139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2435380173613659511, guid: 736a5d13946dd8e4880c5d156940ba45, type: 3}
@@ -2088,8 +2174,10 @@ GameObject:
   - component: {fileID: 1238691211}
   - component: {fileID: 1238691210}
   - component: {fileID: 1238691209}
+  - component: {fileID: 1238691212}
+  - component: {fileID: 1238691213}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2158,7 +2246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1238691210}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1238691213}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1238691210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2197,6 +2297,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238691207}
   m_CullTransparentMesh: 1
+--- !u!114 &1238691212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238691207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.25490198}
+  m_EffectDistance: {x: 12, y: -10}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1238691213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238691207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98461b37878395c44abfa8b8b49af847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 2077078550}
 --- !u!1 &1282560473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,6 +2337,7 @@ GameObject:
   - component: {fileID: 1282560474}
   - component: {fileID: 1282560476}
   - component: {fileID: 1282560475}
+  - component: {fileID: 1282560477}
   m_Layer: 5
   m_Name: Panel-1
   m_TagString: Untagged
@@ -2277,6 +2407,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282560473}
   m_CullTransparentMesh: 1
+--- !u!114 &1282560477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282560473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.25490198}
+  m_EffectDistance: {x: 12, y: -10}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1400975042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,6 +2512,7 @@ GameObject:
   - component: {fileID: 1409996826}
   - component: {fileID: 1409996828}
   - component: {fileID: 1409996827}
+  - component: {fileID: 1409996829}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -2432,6 +2578,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409996825}
   m_CullTransparentMesh: 1
+--- !u!114 &1409996829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409996825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.25490198}
+  m_EffectDistance: {x: 12, y: -10}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1619864202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,8 +3157,10 @@ GameObject:
   - component: {fileID: 1945607009}
   - component: {fileID: 1945607008}
   - component: {fileID: 1945607007}
+  - component: {fileID: 1945607010}
+  - component: {fileID: 1945607011}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Button (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3066,7 +3229,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1945607008}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945607011}
+        m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+        m_MethodName: Answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1945607008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,6 +3280,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945607005}
   m_CullTransparentMesh: 1
+--- !u!114 &1945607010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945607005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.25490198}
+  m_EffectDistance: {x: 12, y: -10}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1945607011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945607005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98461b37878395c44abfa8b8b49af847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 2077078550}
 --- !u!1 &2052947636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,7 +3468,7 @@ GameObject:
   - component: {fileID: 2077078549}
   - component: {fileID: 2077078550}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: QuizManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3294,9 +3498,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 2077078547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c072d1a36b9f4428da3ce7ff1e1469, type: 3}
+  m_Script: {fileID: 11500000, guid: e5310fb76b22d0343a0d3be5726c532f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Questions:
+  - Question: Apa nama rumah adat tradisional Jawa?
+    Answers:
+    - Tongkonan
+    - Joglo
+    - Gadang
+    - Lamin
+    CorrectAnswer: 1
+  - Question: Apa nama seni pertunjukan boneka kulit khas Jawa?
+    Answers:
+    - Wayang V-tuber
+    - Wayang Kulit
+    - Wayang Orang
+    - Ludruk
+    CorrectAnswer: 1
+  - Question: Tarian khas Jawa yang sering dipentaskan dalam keraton adalah?
+    Answers:
+    - 'Tari Saman  '
+    - Tari Piring
+    - Tari Gambyong
+    - Tari Seudati
+    CorrectAnswer: 2
+  options:
+  - {fileID: 1238691207}
+  - {fileID: 305190233}
+  - {fileID: 1945607005}
+  - {fileID: 807951598}
+  currentQuestion: 2
+  QuestionText: {fileID: 1082410831}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
