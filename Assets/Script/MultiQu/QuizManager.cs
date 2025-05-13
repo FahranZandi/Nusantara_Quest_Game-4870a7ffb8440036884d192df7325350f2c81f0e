@@ -12,13 +12,13 @@ public class QuizManager : MonoBehaviour
 
     private void Start()
     {
-        Questions.RemoveAt(currentQuestion);  // Menggunakan Questions, bukan QnA
         generateQuestion();
     }
 
 
     public void correct()
     {
+        Questions.RemoveAt(currentQuestion);  // Menggunakan Questions, bukan QnA
         generateQuestion();
     }
 
@@ -41,8 +41,19 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
-        currentQuestion = Random.Range(0, Questions.Count);
-        QuestionText.text = Questions[currentQuestion].Question;  // Menggunakan Questions, bukan QnA, dan QuestionText, bukan QuestionTxt
-        setAnswers();
+
+        if (Questions.Count > 0)
+        {
+            currentQuestion = Random.Range(0, Questions.Count);
+            // currentQuestion = Random.Range(0, QnA.Count);  // Menggunakan Questions, bukan QnA
+
+            QuestionText.text = Questions[currentQuestion].Question;  // Menggunakan Questions, bukan QnA, dan QuestionText, bukan QuestionTxt
+            setAnswers();
+        } else
+        {
+            Debug.Log("out of Questions");
+            // Add logic to handle when there are no more questions
+        }
+
     }
 }
