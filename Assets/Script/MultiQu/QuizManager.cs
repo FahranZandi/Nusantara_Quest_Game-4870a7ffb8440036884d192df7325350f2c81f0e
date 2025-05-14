@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class QuizManager : MonoBehaviour
 {
@@ -13,15 +15,23 @@ public class QuizManager : MonoBehaviour
     public GameObject QuistPanel;
     public GameObject GoPanel;
 
+    public Text QuestionTxt;
+    public Text ScoreTxt;
+    int totalQuestion = 0;
+    public int score;
+ 
     private void Start()
     {
+        totalQuestion = Questions.Count;  // Menggunakan Questions, bukan QnA
         GoPanel.SetActive(false);
         generateQuestion();
     }
 
     public void retry()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Debug.Log("Retry");
+        // Add logic to handle retry
     }
 
     public void GameOver()
@@ -30,16 +40,23 @@ public class QuizManager : MonoBehaviour
         // Debug.Log("Game Over");
         // Add logic to handle game over
         GoPanel.SetActive(true);
+        ScoreTxt.text = score + "/" + totalQuestion;  // ✅ diubah dari hanya "/" + totalQuestion
+        // Menggunakan Questions, bukan QnA
     }
 
 
     public void correct()
     {
+        score += 1; // ketika benar
         Questions.RemoveAt(currentQuestion);  // Menggunakan Questions, bukan QnA
         generateQuestion();
     }
 
-
+    public void wrong()
+    {
+        Questions.RemoveAt(currentQuestion);  // Menggunakan Questions, bukan QnA
+        generateQuestion();
+    }
 
     void setAnswers()
     {
