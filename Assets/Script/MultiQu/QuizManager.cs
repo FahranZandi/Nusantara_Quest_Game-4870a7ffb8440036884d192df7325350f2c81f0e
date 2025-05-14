@@ -10,9 +10,26 @@ public class QuizManager : MonoBehaviour
 
     public Text QuestionText;  // Menggunakan QuestionText, bukan QuestionTxt
 
+    public GameObject QuistPanel;
+    public GameObject GoPanel;
+
     private void Start()
     {
+        GoPanel.SetActive(false);
         generateQuestion();
+    }
+
+    public void retry()
+    {
+
+    }
+
+    public void GameOver()
+    {
+        QuistPanel.SetActive(false);
+        // Debug.Log("Game Over");
+        // Add logic to handle game over
+        GoPanel.SetActive(true);
     }
 
 
@@ -49,10 +66,12 @@ public class QuizManager : MonoBehaviour
 
             QuestionText.text = Questions[currentQuestion].Question;  // Menggunakan Questions, bukan QnA, dan QuestionText, bukan QuestionTxt
             setAnswers();
-        } else
+        }
+        else
         {
             Debug.Log("out of Questions");
             // Add logic to handle when there are no more questions
+            GameOver();
         }
 
     }

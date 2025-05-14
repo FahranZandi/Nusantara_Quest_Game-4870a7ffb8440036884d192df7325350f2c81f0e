@@ -2579,7 +2579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1282560474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2964,7 +2964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1606856965
 Transform:
   m_ObjectHideFlags: 0
@@ -3919,6 +3919,8 @@ MonoBehaviour:
   - {fileID: 807951598}
   currentQuestion: 2
   QuestionText: {fileID: 1082410831}
+  QuistPanel: {fileID: 0}
+  GoPanel: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
