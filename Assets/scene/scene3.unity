@@ -882,6 +882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 2077078550}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &345111917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &692182123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1858,6 +1859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 2077078550}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &961666139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2435380173613659511, guid: 736a5d13946dd8e4880c5d156940ba45, type: 3}
@@ -2403,6 +2405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 2077078550}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1270450672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3710,6 +3713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 2077078550}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2052947636
 GameObject:
   m_ObjectHideFlags: 0
