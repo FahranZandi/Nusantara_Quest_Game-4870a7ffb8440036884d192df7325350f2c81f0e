@@ -882,7 +882,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 2077078550}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &345111917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,7 +1858,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 2077078550}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &961666139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2435380173613659511, guid: 736a5d13946dd8e4880c5d156940ba45, type: 3}
@@ -2405,7 +2403,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 2077078550}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1270450672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3713,7 +3710,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 2077078550}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2052947636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3939,8 +3935,11 @@ MonoBehaviour:
   QuestionText: {fileID: 1082410831}
   QuistPanel: {fileID: 1282560473}
   GoPanel: {fileID: 1606856964}
+  quizCanvas: {fileID: 530859131}
   QuestionTxt: {fileID: 1082410831}
   ScoreTxt: {fileID: 1271771143}
+  actionButton: {fileID: 1393565792}
+  actionButtonText: {fileID: 1270450674}
   score: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

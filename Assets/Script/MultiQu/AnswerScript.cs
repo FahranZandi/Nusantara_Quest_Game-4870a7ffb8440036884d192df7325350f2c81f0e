@@ -6,11 +6,11 @@ public class AnswerScript : MonoBehaviour
 {
     public bool isCorrect = false;
     public QuizManager quizManager;
-    public Color startColor;
+    //public Color startColor;
 
     public void Start()
     {
-        startColor = GetComponent<Image>().color;
+        //startColor = GetComponent<Image>().color;
     }
     public void Answer()
     {

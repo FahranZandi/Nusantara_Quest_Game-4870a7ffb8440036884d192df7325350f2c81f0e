@@ -2,59 +2,78 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class QuizManager : MonoBehaviour
 {
-    public List<QuestionAnswer> Questions;  // Menggunakan Questions, bukan QnA
+    public List<QuestionAnswer> Questions;
+    private List<QuestionAnswer> originalQuestions; // (ditambah) menyimpan salinan asli pertanyaan
     public GameObject[] options;
     public int currentQuestion;
 
-    public Text QuestionText;  // Menggunakan QuestionText, bukan QuestionTxt
+    public Text QuestionText;
 
     public GameObject QuistPanel;
     public GameObject GoPanel;
+    public GameObject quizCanvas; // (ditambah) referensi ke quiz canvas utama
 
     public Text QuestionTxt;
     public Text ScoreTxt;
+    public Button actionButton; // (ditambah) tombol retry/continue
+    public Text actionButtonText; // (ditambah) teks tombol
     int totalQuestion = 0;
     public int score;
- 
+
     private void Start()
     {
-        totalQuestion = Questions.Count;  // Menggunakan Questions, bukan QnA
+        originalQuestions = new List<QuestionAnswer>(Questions); // (ditambah) simpan pertanyaan asli
+        totalQuestion = Questions.Count;
         GoPanel.SetActive(false);
         generateQuestion();
     }
 
     public void retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // Debug.Log("Retry");
-        // Add logic to handle retry
+        // (diubah) bukan me-reload scene, tapi reset quiz
+        Questions = new List<QuestionAnswer>(originalQuestions); // reset pertanyaan
+        score = 0; // reset score
+        GoPanel.SetActive(false);
+        QuistPanel.SetActive(true);
+        generateQuestion(); // generate ulang
     }
 
     public void GameOver()
     {
         QuistPanel.SetActive(false);
-        // Debug.Log("Game Over");
-        // Add logic to handle game over
         GoPanel.SetActive(true);
-        ScoreTxt.text = score + "/" + totalQuestion;  // ✅ diubah dari hanya "/" + totalQuestion
-        // Menggunakan Questions, bukan QnA
-    }
+        ScoreTxt.text = score + "/" + totalQuestion;
 
+        if (score == totalQuestion)
+        {
+            actionButtonText.text = "Continue"; // (ditambah) ubah tulisan tombol
+            actionButton.onClick.RemoveAllListeners(); // hapus listener sebelumnya
+            actionButton.onClick.AddListener(() =>
+            {
+                quizCanvas.SetActive(false); // (ditambah) sembunyikan canvas
+            });
+        }
+        else
+        {
+            actionButtonText.text = "Ulangi"; // (ditambah) ubah tulisan tombol
+            actionButton.onClick.RemoveAllListeners(); // hapus listener sebelumnya
+            actionButton.onClick.AddListener(retry); // panggil retry
+        }
+    }
 
     public void correct()
     {
-        score += 1; // ketika benar
-        Questions.RemoveAt(currentQuestion);  // Menggunakan Questions, bukan QnA
+        score += 1;
+        Questions.RemoveAt(currentQuestion);
         generateQuestion();
     }
 
     public void wrong()
     {
-        Questions.RemoveAt(currentQuestion);  // Menggunakan Questions, bukan QnA
+        Questions.RemoveAt(currentQuestion);
         generateQuestion();
     }
 
@@ -62,34 +81,28 @@ public class QuizManager : MonoBehaviour
     {
         for (int i = 0; i < options.Length; i++)
         {
-            options[i].GetComponent<AnswerScript>().isCorrect = false;  // Menggunakan AnswerScript, bukan Answer
-            options[i].transform.GetChild(0).GetComponent<Text>().text = Questions[currentQuestion].Answers[i];  // Menggunakan Questions, bukan QnA
+            options[i].GetComponent<AnswerScript>().isCorrect = false;
+            options[i].transform.GetChild(0).GetComponent<Text>().text = Questions[currentQuestion].Answers[i];
 
-            if(Questions[currentQuestion].CorrectAnswer == i+1)  // Menggunakan Questions, bukan QnA
+            if(Questions[currentQuestion].CorrectAnswer == i+1)
             {
-                options[i].GetComponent<AnswerScript>().isCorrect = true;  // Menggunakan AnswerScript, bukan Answer
+                options[i].GetComponent<AnswerScript>().isCorrect = true;
             }
         }
-
     }
 
     void generateQuestion()
     {
-
         if (Questions.Count > 0)
         {
             currentQuestion = Random.Range(0, Questions.Count);
-            // currentQuestion = Random.Range(0, QnA.Count);  // Menggunakan Questions, bukan QnA
-
-            QuestionText.text = Questions[currentQuestion].Question;  // Menggunakan Questions, bukan QnA, dan QuestionText, bukan QuestionTxt
+            QuestionText.text = Questions[currentQuestion].Question;
             setAnswers();
         }
         else
         {
             Debug.Log("out of Questions");
-            // Add logic to handle when there are no more questions
             GameOver();
         }
-
     }
 }
