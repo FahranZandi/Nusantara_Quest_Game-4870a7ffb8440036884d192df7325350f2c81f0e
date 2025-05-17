@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kalimantan_0: 1878103692668091898
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -273,7 +273,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sulawesi_0: -403411298114824778
+      sulawesi_1: 113253974365464486
+      sulawesi_2: -8609698291432803288
+      sulawesi_3: -2822614871418095134
+      sulawesi_4: -8799094568411739441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -448,7 +448,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      jawa_0: -4326845840816215429
+      jawa_1: -5815180719055888635
+      jawa_10: -4585769139825819012
+      jawa_11: 8255140160272034105
+      jawa_2: -2972852970370386034
+      jawa_3: -9171536685803060793
+      jawa_4: -6709763137477465780
+      jawa_5: 2014350486777320972
+      jawa_6: -5505580967253437446
+      jawa_7: 6330717944218633117
+      jawa_8: 841258893435878123
+      jawa_9: -1758058890446996896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
