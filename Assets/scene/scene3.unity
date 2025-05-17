@@ -1482,7 +1482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &692182123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2579,7 +2579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1282560474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3931,12 +3931,12 @@ MonoBehaviour:
   - {fileID: 305190233}
   - {fileID: 1945607005}
   - {fileID: 807951598}
-  currentQuestion: 1
+  currentQuestion: 0
   QuestionText: {fileID: 1082410831}
   QuistPanel: {fileID: 1282560473}
   GoPanel: {fileID: 1606856964}
   quizCanvas: {fileID: 530859131}
-  QuestionTxt: {fileID: 1082410831}
+  QuestionTxt: {fileID: 0}
   ScoreTxt: {fileID: 1271771143}
   actionButton: {fileID: 1393565792}
   actionButtonText: {fileID: 1270450674}
