@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;    // ← tambahkan ini!
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.UI;    // ← jangan lupa!
 
 public class AnswerScript : MonoBehaviour
 {
@@ -13,11 +11,12 @@ public class AnswerScript : MonoBehaviour
 
     void Start()
     {
-        // ambil komponen Image
+        // ambil komponen Image & simpan warna awal
         img = GetComponent<Image>();
         startColor = img.color;
     }
 
+    // dipanggil saat klik jawaban
     public void Answer()
     {
         if (isCorrect)
@@ -32,5 +31,11 @@ public class AnswerScript : MonoBehaviour
             Debug.Log("Wrong Answer");
             quizManager.wrong();
         }
+    }
+
+    // reset warna ke startColor
+    public void ResetColor()
+    {
+        img.color = startColor;
     }
 }
