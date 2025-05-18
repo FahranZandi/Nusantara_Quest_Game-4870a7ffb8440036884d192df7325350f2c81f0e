@@ -1,29 +1,35 @@
 using UnityEngine;
-using System.Collections.Generic;
+using UnityEngine.UI;    // ← tambahkan ini!
 using System.Collections;
+using System.Collections.Generic;
 
 public class AnswerScript : MonoBehaviour
 {
     public bool isCorrect = false;
     public QuizManager quizManager;
-    //public Color startColor;
+    public Color startColor;
 
-    public void Start()
+    private Image img;      // cache Image component
+
+    void Start()
     {
-        //startColor = GetComponent<Image>().color;
+        // ambil komponen Image
+        img = GetComponent<Image>();
+        startColor = img.color;
     }
+
     public void Answer()
     {
         if (isCorrect)
         {
+            img.color = Color.green;
             Debug.Log("Correct Answer");
-            // Add your logic for correct answer here
             quizManager.correct();
         }
         else
         {
+            img.color = Color.red;
             Debug.Log("Wrong Answer");
-            // Add your logic for wrong answer here
             quizManager.wrong();
         }
     }
