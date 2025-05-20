@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      krama inggil_0: 3679375500571117156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

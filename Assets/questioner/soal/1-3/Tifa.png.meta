@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tifa_0: -3032332106512713048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gamelan_0: 2197983191476002382
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

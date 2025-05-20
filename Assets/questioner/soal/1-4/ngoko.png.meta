@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ngoko_0: -1429619768994571609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

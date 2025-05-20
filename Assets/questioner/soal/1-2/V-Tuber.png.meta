@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      V-Tuber_0: 8206289199040610367
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
