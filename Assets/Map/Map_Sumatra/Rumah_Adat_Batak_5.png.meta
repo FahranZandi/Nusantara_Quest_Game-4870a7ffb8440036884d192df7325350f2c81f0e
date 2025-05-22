@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ecb68c09d319ac548bca5e8a4858b84b
+guid: 7b06ba27efc3e3041ac5a2d972a244b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7161188098878997451
-    second: koin-removebg-preview_0
+      213: -7584949427060578790
+    second: Rumah_Adat_Batak_5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: koin-removebg-preview_0
+      name: Rumah_Adat_Batak_5_0
       rect:
         serializedVersion: 2
-        x: 197
-        y: 89
-        width: 207
-        height: 229
+        x: 0
+        y: 5
+        width: 1080
+        height: 987
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53cff8c9d595e9c90800000000000000
-      internalID: -7161188098878997451
+      spriteID: a1660c0dea8dcb690800000000000000
+      internalID: -7584949427060578790
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      koin-removebg-preview_0: -7161188098878997451
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

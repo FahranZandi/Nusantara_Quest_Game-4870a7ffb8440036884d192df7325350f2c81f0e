@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ecb68c09d319ac548bca5e8a4858b84b
+guid: 72dd8fb010aca7b4ea122d7833723690
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7161188098878997451
-    second: koin-removebg-preview_0
+      213: -6353116890661445926
+    second: Rumah_Adat_Batak_2_0
+  - first:
+      213: 441706566636091282
+    second: Rumah_Adat_Batak_2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: koin-removebg-preview_0
+      name: Rumah_Adat_Batak_2_0
       rect:
         serializedVersion: 2
-        x: 197
-        y: 89
-        width: 207
-        height: 229
+        x: 912
+        y: 1072
+        width: 17
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +157,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53cff8c9d595e9c90800000000000000
-      internalID: -7161188098878997451
+      spriteID: ade179329d135d7a0800000000000000
+      internalID: -6353116890661445926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rumah_Adat_Batak_2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1064
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2973d4738c1412600800000000000000
+      internalID: 441706566636091282
       vertices: []
       indices: 
       edges: []
@@ -173,8 +198,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      koin-removebg-preview_0: -7161188098878997451
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
