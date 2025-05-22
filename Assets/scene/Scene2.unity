@@ -24335,13 +24335,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pintu_1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 1568401287090464864, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9071455
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568401287090464864, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+      propertyPath: m_Size.y
+      value: 6.0052414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568401287090464864, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+      propertyPath: m_Offset.x
+      value: 1.46503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568401287090464864, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.025071621
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966650454077381434, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4546
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966650454077381434, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3537
+      objectReference: {fileID: 0}
     - target: {fileID: 3966650454077381434, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 148.5
+      value: 158.1325
       objectReference: {fileID: 0}
     - target: {fileID: 3966650454077381434, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.89
+      value: -2.9334
       objectReference: {fileID: 0}
     - target: {fileID: 3966650454077381434, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
       propertyPath: m_LocalPosition.z
