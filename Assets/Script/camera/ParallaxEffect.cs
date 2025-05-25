@@ -9,7 +9,18 @@ public class ParallaxEffect : MonoBehaviour
     void Start()
     {
         startpos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+
+        // Coba ambil SpriteRenderer, kalau nggak ada, error friendly~
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            length = spriteRenderer.bounds.size.x;
+        }
+        else
+        {
+            // Kalau ga ada SpriteRenderer di objek ini, gunakan default panjang 0
+            length = 0f;
+        }
     }
 
     void Update()
@@ -19,8 +30,8 @@ public class ParallaxEffect : MonoBehaviour
 
         transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
 
-        // Looping parallax jika infinite scrolling
-        if (temp > startpos + length) startpos += length;
-        else if (temp < startpos - length) startpos -= length;
+        // INI DIHAPUS karena kita tidak ingin infinite scrolling di objek rumah
+        // if (temp > startpos + length) startpos += length;
+        // else if (temp < startpos - length) startpos -= length;
     }
 }
