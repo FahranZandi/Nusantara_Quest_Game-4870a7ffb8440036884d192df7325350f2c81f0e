@@ -1672,7 +1672,7 @@ PrefabInstance:
     - target: {fileID: 6342689554913445008, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
       propertyPath: targetScene
       value: 
-      objectReference: {fileID: 102900000, guid: de90f85ae5c105a45815b3a3786d2211, type: 3}
+      objectReference: {fileID: 102900000, guid: d6d26f314044ac44aac1a5a8a9113bc9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2515,6 +2515,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 2077078550}
+    - target: {fileID: 1280281616083555864, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658675028817219568, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806783269181136911, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3588498037749252797, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
       propertyPath: quizManager
       value: 
@@ -2527,6 +2539,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2077078550}
+    - target: {fileID: 6952424127230937033, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7469046343809873432, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
       propertyPath: quizManager
       value: 
@@ -2534,6 +2550,10 @@ PrefabInstance:
     - target: {fileID: 8008839346713616932, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008839346713616932, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9057911894448891744, guid: 7b15da70395803144a7a833e765ecb2e, type: 3}
       propertyPath: m_Pivot.x
