@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3572057138549215326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5281057308688376072}
+  - component: {fileID: 8651889283622145290}
+  m_Layer: 0
+  m_Name: QuizManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5281057308688376072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572057138549215326}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 71, y: -5.2, z: 0.38312995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8651889283622145290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572057138549215326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5310fb76b22d0343a0d3be5726c532f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Questions:
+  - Question: Apa nama rumah adat tradisional Jawa?
+    Answers:
+    - {fileID: 6655846454883450130, guid: a647b2a8270fe414f811db1208466aa1, type: 3}
+    - {fileID: -8452823676433675719, guid: a19f6f22c13135d4f8976173f04af60a, type: 3}
+    - {fileID: -8482703944377712192, guid: da2d0fd243f2eba4c99073ee5c7ea05f, type: 3}
+    - {fileID: -1456316756819460678, guid: 0fcf1b6de98c7c04fb58a042d958e862, type: 3}
+    CorrectAnswer: 2
+  - Question: Apa nama seni pertunjukan boneka kulit khas Jawa?
+    Answers:
+    - {fileID: 7823002636091566584, guid: 407ab10421afcca4180c996ce0c3d438, type: 3}
+    - {fileID: 8206289199040610367, guid: 531ee46bb026884489256315b52be5c3, type: 3}
+    - {fileID: -1001757039481521814, guid: fd426ca3e735e9b47b7821a6d84c9997, type: 3}
+    - {fileID: -3601406496238631471, guid: 6f1d68d808a4f3940bbad563664252b0, type: 3}
+    CorrectAnswer: 4
+  - Question: Alat musik tradisional Jawa yang terdiri dari gong, kenong, dan saron
+      adalah?
+    Answers:
+    - {fileID: 7900656520633028774, guid: 3b9cc492e27190344a17d081b0bc441b, type: 3}
+    - {fileID: -7170207811044584242, guid: 5c3031be16be1fa4ba6b10e6b64fd840, type: 3}
+    - {fileID: -3032332106512713048, guid: 16cd08b9f4986934b8c7000c23df5c76, type: 3}
+    - {fileID: 2197983191476002382, guid: 47a63ef007e2e6d4c88d6c46f22d26fd, type: 3}
+    CorrectAnswer: 4
+  - Question: Alat musik tradisional Jawa yang terdiri dari gong, kenong, dan saron
+      adalah?
+    Answers:
+    - {fileID: 3679375500571117156, guid: cd599b8ad2797f44ab455b7c2d09c473, type: 3}
+    - {fileID: -2134637478633576232, guid: a53673115b3192e4cb86892e2eed7825, type: 3}
+    - {fileID: 3219345542300421683, guid: c42f53072c6b4f644ba93867931f2c4f, type: 3}
+    - {fileID: -1429619768994571609, guid: 537d9de3aee4a544ebfc30dcf5fcbd25, type: 3}
+    CorrectAnswer: 1
+  options:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentQuestion: 0
+  QuestionText: {fileID: 0}
+  QuistPanel: {fileID: 0}
+  GoPanel: {fileID: 0}
+  quizCanvas: {fileID: 0}
+  QuestionTxt: {fileID: 0}
+  ScoreTxt: {fileID: 0}
+  actionButton: {fileID: 0}
+  actionButtonText: {fileID: 0}
+  score: 0
