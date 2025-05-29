@@ -15457,10 +15457,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1270450674}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: Questions.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: 'options.Array.data[0]'
       value: 
       objectReference: {fileID: 1238691207}
@@ -15476,62 +15472,6 @@ PrefabInstance:
       propertyPath: 'options.Array.data[3]'
       value: 
       objectReference: {fileID: 807951598}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: Questions.Array.data[0].Question
-      value: Apa nama rumah adat khas suku Batak Toba?
-      objectReference: {fileID: 0}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: Questions.Array.data[1].Question
-      value: Alat musik tiup tradisional suku Batak disebut?
-      objectReference: {fileID: 0}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: Questions.Array.data[2].Question
-      value: Sistem kekerabatan masyarakat Batak umumnya bersifat?
-      objectReference: {fileID: 0}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: Questions.Array.data[0].CorrectAnswer
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: Questions.Array.data[0].Answers.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[0].Answers.Array.data[3]'
-      value: 
-      objectReference: {fileID: 2495773000600247551, guid: 82378efdb654a1b469cac968e7a74716, type: 3}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[1].Answers.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2040336648585947235, guid: 012bd531640d5fd41b6a5fae8fce25be, type: 3}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[1].Answers.Array.data[1]'
-      value: 
-      objectReference: {fileID: 9127159178957052509, guid: 1095af04bf843f04a9ae9fb97625e201, type: 3}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[1].Answers.Array.data[2]'
-      value: 
-      objectReference: {fileID: -4407656860312556532, guid: 99a0f1fe9841bc94bbec24f7d42e813d, type: 3}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[1].Answers.Array.data[3]'
-      value: 
-      objectReference: {fileID: -4290876768536067023, guid: c755db1533e619c4f9729078e6e0f1ef, type: 3}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[2].Answers.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2040336648585947235, guid: 012bd531640d5fd41b6a5fae8fce25be, type: 3}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[2].Answers.Array.data[1]'
-      value: 
-      objectReference: {fileID: 9127159178957052509, guid: 1095af04bf843f04a9ae9fb97625e201, type: 3}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[2].Answers.Array.data[2]'
-      value: 
-      objectReference: {fileID: -4407656860312556532, guid: 99a0f1fe9841bc94bbec24f7d42e813d, type: 3}
-    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
-      propertyPath: 'Questions.Array.data[2].Answers.Array.data[3]'
-      value: 
-      objectReference: {fileID: -4290876768536067023, guid: c755db1533e619c4f9729078e6e0f1ef, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
