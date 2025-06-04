@@ -1,33 +1,30 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
 public class ChangeScene : MonoBehaviour
 {
+#if UNITY_EDITOR
     [Header("Scene tujuan (drag scene asset ke sini)")]
-    public SceneAsset targetScene; // Bisa drag and drop scene di Inspector
+    public UnityEditor.SceneAsset targetScene; // Ini hanya digunakan di Editor
+    private string sceneName;
+
+    private void OnValidate()
+    {
+        // Ini akan menyimpan nama scene hanya saat di Editor
+        if (targetScene != null)
+        {
+            sceneName = targetScene.name;
+        }
+    }
+#else
+    private string sceneName = "NamaScene"; // Hardcode nama scene untuk build
+#endif
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-#if UNITY_EDITOR
-        string sceneName = targetScene != null ? targetScene.name : null;
-#else
-        // Di build, kita tidak bisa akses SceneAsset, jadi hardcode atau gunakan cara lain.
-        string sceneName = ""; // Buat cara alternatif di sini kalau perlu
-#endif
-
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !string.IsNullOrEmpty(sceneName))
         {
-            if (!string.IsNullOrEmpty(sceneName))
-            {
-                SceneManager.LoadScene(sceneName);
-            }
-            else
-            {
-                Debug.LogWarning("Scene belum dipilih di Inspector, tidak bisa pindah scene.");
-            }
+            SceneManager.LoadScene(sceneName);
         }
     }
 }
