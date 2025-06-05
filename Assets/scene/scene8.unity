@@ -6793,7 +6793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2435380173613659511, guid: 736a5d13946dd8e4880c5d156940ba45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.97
+      value: 231.6
       objectReference: {fileID: 0}
     - target: {fileID: 2435380173613659511, guid: 736a5d13946dd8e4880c5d156940ba45, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9913,11 +9913,33 @@ PrefabInstance:
       propertyPath: targetScene
       value: 
       objectReference: {fileID: 102900000, guid: de90f85ae5c105a45815b3a3786d2211, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6342689554913445008, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1412835527628045584, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1518648858}
   m_SourcePrefab: {fileID: 100100000, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+--- !u!1 &1518648857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1412835527628045584, guid: 8fee55103bf4e084daf8b6ab315c5ffa, type: 3}
+  m_PrefabInstance: {fileID: 1518648856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1518648858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518648857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab12fc8b161fa546b1ab47b36a13fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaSceneTujuan: MainMenu
 --- !u!1 &1524746998
 GameObject:
   m_ObjectHideFlags: 0
@@ -15254,7 +15276,7 @@ PrefabInstance:
       objectReference: {fileID: 1270450674}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: Questions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: 'options.Array.data[0]'
@@ -15274,7 +15296,7 @@ PrefabInstance:
       objectReference: {fileID: 807951598}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: Questions.Array.data[0].Question
-      value: Senjata tradisional khas suku Dayak adalah?
+      value: Suku Bugis terkenal dengan keahliannya dalam bidang...?
       objectReference: {fileID: 0}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: Questions.Array.data[1].Question
@@ -15286,7 +15308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: Questions.Array.data[0].CorrectAnswer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: Questions.Array.data[1].CorrectAnswer
@@ -15297,21 +15319,25 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
+      propertyPath: Questions.Array.data[0].Answers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: 'Questions.Array.data[0].Answers.Array.data[0]'
       value: 
-      objectReference: {fileID: -855298285791758126, guid: 689e07de3af49354d9bbed31e68faa7b, type: 3}
+      objectReference: {fileID: -855298285791758126, guid: 74ecb065b9d8a3d4da8fecd5aa113618, type: 3}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: 'Questions.Array.data[0].Answers.Array.data[1]'
       value: 
-      objectReference: {fileID: 6937817954938267909, guid: a953bbf31d066374ba179a0dc9d9f89a, type: 3}
+      objectReference: {fileID: 6937817954938267909, guid: c512933279f5e704b9b7d931766ec945, type: 3}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: 'Questions.Array.data[0].Answers.Array.data[2]'
       value: 
-      objectReference: {fileID: -4178046375966092550, guid: 3b0c4ee21df7a294bad6e188f7656741, type: 3}
+      objectReference: {fileID: -6470460504253458178, guid: c7559d9b72e64974bac255fc6cd48b28, type: 3}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: 'Questions.Array.data[0].Answers.Array.data[3]'
       value: 
-      objectReference: {fileID: -6470460504253458178, guid: a61c3aa6187017944819159510193e48, type: 3}
+      objectReference: {fileID: -4178046375966092550, guid: 4a7ee66906b4edf4e8d3c6ef52372e49, type: 3}
     - target: {fileID: 8651889283622145290, guid: e1d607b8ddc65334b9dbf44ff4ea8b5b, type: 3}
       propertyPath: 'Questions.Array.data[1].Answers.Array.data[0]'
       value: 
